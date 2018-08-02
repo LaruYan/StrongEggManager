@@ -1,0 +1,15 @@
+<resources>
+
+    <dimen name="padding_small">6dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="padding_windowside_leftright">16dp</dimen>
+    <dimen name="padding_inside_elements">4dp</dimen>
+    <dimen name="text_medium">16dp</dimen>
+    <dimen name="entire_minimum_size">48dp</dimen>
+    <dimen name="line_medium">2dp</dimen>
+    <dimen name="line_thin">0.5dp</dimen>
+    <dimen name="section_tag_height">30dp</dimen>
+    <dimen name="height_dummy_pull2refresh">51dp</dimen>
+
+</resources>

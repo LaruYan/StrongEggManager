@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:theme="@style/Dialog" >
+
+    <LinearLayout
+        style="@style/PageRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/dialog_elements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_pref_notice" />
+
+        <CheckBox
+            android:id="@+id/checkBox_pref_useHttpClient"
+            style="@style/dialog_elements"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/entire_minimum_size"
+            android:text="@string/app_pref_HttpClient" />
+
+        <CheckBox
+            android:id="@+id/checkBox_pref_useDarkIcon"
+            style="@style/dialog_elements"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/entire_minimum_size"
+            android:text="@string/app_pref_DarkIcon" />
+
+        <CheckBox
+            android:id="@+id/checkBox_pref_persistMonitoring"
+            style="@style/dialog_elements"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/entire_minimum_size"
+            android:text="@string/app_pref_AutoRefresh" />
+
+        <CheckBox
+            android:id="@+id/checkBox_pref_useMiniAutorefresh"
+            style="@style/dialog_elements"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/entire_minimum_size"
+            android:text="@string/app_pref_MiniAutoRefresh" />
+
+        <TextView
+            style="@style/dialog_elements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_pref_pollingRate" />
+
+        <Spinner
+            android:id="@+id/spinner_pollingRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout_pollingRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/editText_pollingRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:digits="0123456789"
+                android:maxLength="5"
+                android:ems="5"
+                android:gravity="right|center_vertical"
+                android:inputType="numberDecimal" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/app_pref_millisec" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

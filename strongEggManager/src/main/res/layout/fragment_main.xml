@@ -1,0 +1,397 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <!--
+ViewPager 를 다른 스레드에서 불러오게 하려고 더미를 넣었는데 
+onResume시 화면이 나오지 않는 문제가 있다.
+한 번 inflate로 끝내야하는데 그게 아니니 아쉽다.
+
+    -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout_ActionBar"
+        android:visibility="gone" >
+
+        <!--
+    	This title strip will display the currently visible page title, as well as the page
+    	titles for adjacent pages.        -->
+
+        <android.support.v4.view.PagerTabStrip
+            android:id="@+id/pager_title_strip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@color/StripColor"
+            android:paddingBottom="@dimen/padding_inside_elements"
+            android:paddingTop="@dimen/padding_inside_elements"
+            android:textColor="@color/opaqueWhite" />
+    </android.support.v4.view.ViewPager>
+
+    <ScrollView
+        android:id="@+id/scrollView_NotifyNotAvailable"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout_ActionBar"
+        android:background="#C0FFFFFF"
+        android:fadingEdge="none"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/padding_windowside_leftright"
+            android:paddingRight="@dimen/padding_windowside_leftright" >
+
+            <TextView
+                android:id="@+id/textView_NNA_Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding_inside_elements"
+                android:paddingTop="@dimen/padding_inside_elements"
+                android:text="@string/error_nna_pleasewait_title"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/textView_NNA_NameOfNetwork"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ElementsBackground"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding_inside_elements"
+                android:paddingTop="@dimen/padding_inside_elements"
+                android:text="@string/error_nna_pleasewait_ssid"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFFFF" />
+
+            <ImageView
+                android:id="@+id/imageView_NNA_Picture"
+                android:layout_width="192dp"
+                android:layout_height="192dp"
+                android:background="@drawable/list_item"
+                android:clickable="true"
+                android:contentDescription="@string/action_wifi"
+                android:focusable="true"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding_inside_elements"
+                android:paddingTop="@dimen/padding_inside_elements"
+                android:src="@drawable/nna_recognizing" />
+
+            <TextView
+                android:id="@+id/textView_NNA_Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/padding_inside_elements"
+                android:paddingTop="@dimen/padding_inside_elements"
+                android:text="@string/error_nna_pleasewait_desc"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+    </ScrollView>
+	
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/padding_inside_elements"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout_ActionBar"
+        android:background="@drawable/simple_shadow_down"/>
+
+    
+    
+    
+    <LinearLayout
+        android:id="@+id/linearLayout_ActionBar"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/entire_minimum_size"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/ActionBarBackground"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imageButton_home"
+            android:layout_width="@dimen/entire_minimum_size"
+            android:layout_height="@dimen/entire_minimum_size"
+            android:background="@drawable/button_pic_item"
+            android:clickable="true"
+            android:contentDescription="@string/action_first_page"
+            android:longClickable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_ab_back_holo_dark"
+            android:visibility="invisible" />
+
+        <!--
+        <ImageButton
+            android:id="@+id/imageButton_home"
+            android:layout_width="@dimen/entire_minimum_size"
+            android:layout_height="@dimen/entire_minimum_size"
+            android:background="@color/transparentWhite"
+            android:clickable="false"
+            android:longClickable="false"
+            android:padding="@dimen/padding_medium"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_launcher"
+			android:visibility="visible" />
+
+
+
+        -->
+
+        <TextView
+            android:id="@+id/textView_ActionBarLabel"
+            style="@style/actionBar_text"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/entire_minimum_size"
+            android:layout_weight="1" />
+
+        <ProgressBar
+            android:id="@+id/progressBar_Refresh"
+            android:layout_width="@dimen/entire_minimum_size"
+            android:layout_height="@dimen/entire_minimum_size"
+            android:padding="@dimen/padding_medium"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/imageButton_Refresh"
+            android:layout_width="@dimen/entire_minimum_size"
+            android:layout_height="@dimen/entire_minimum_size"
+            android:background="@drawable/button_pic_item"
+            android:contentDescription="@string/action_refresh"
+            android:src="@drawable/ic_action_refresh"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/imageButton_Login"
+            android:layout_width="@dimen/entire_minimum_size"
+            android:layout_height="@dimen/entire_minimum_size"
+            android:background="@drawable/button_pic_item"
+            android:contentDescription="@string/action_login"
+            android:src="@drawable/ic_action_login"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/imageButton_Wifi"
+            android:layout_width="@dimen/entire_minimum_size"
+            android:layout_height="@dimen/entire_minimum_size"
+            android:background="@drawable/button_pic_item"
+            android:contentDescription="@string/action_wifi"
+            android:src="@drawable/ic_action_wifi"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/imageButton_Settings"
+            android:layout_width="@dimen/entire_minimum_size"
+            android:layout_height="@dimen/entire_minimum_size"
+            android:background="@drawable/button_pic_item"
+            android:contentDescription="@string/action_settings"
+            android:src="@drawable/ic_action_settings"
+            android:visibility="gone" />
+        <ImageButton
+            android:id="@+id/imageButton_LatestFirmwarePage"
+            android:layout_width="@dimen/entire_minimum_size"
+            android:layout_height="@dimen/entire_minimum_size"
+            android:background="@drawable/button_pic_item"
+            android:contentDescription="@string/action_update"
+            android:src="@drawable/ic_action_web"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/imageButton_Power"
+            android:layout_width="@dimen/entire_minimum_size"
+            android:layout_height="@dimen/entire_minimum_size"
+            android:background="@drawable/button_pic_item"
+            android:contentDescription="@string/action_power_option"
+            android:src="@drawable/ic_action_poweroff_more"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/imageButton_More"
+            android:layout_width="@dimen/entire_minimum_size"
+            android:layout_height="@dimen/entire_minimum_size"
+            android:background="@drawable/button_pic_item"
+            android:contentDescription="@string/action_overflow"
+            android:src="@drawable/ic_action_overflow"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/entire_minimum_size"
+        android:layout_height="0dp"
+        android:layout_alignBottom="@id/linearLayout_ActionBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:longClickable="false"
+        android:padding="@dimen/padding_medium"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_launcher" />
+
+    <View
+        android:id="@+id/viewRect_menuUnFocusArea"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_Menu_Power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout_ActionBar"
+        android:background="@color/ElementsBackground"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView_menu_Sleep"
+            style="@style/menu_item_compound"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/entire_minimum_size"
+            android:drawableLeft="@drawable/ic_action_sleep"
+            android:text="@string/action_sleep" >
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_thin"
+            android:background="@color/ItemDividerLine" />
+
+        <TextView
+            android:id="@+id/textView_menu_Reboot"
+            style="@style/menu_item_compound"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/entire_minimum_size"
+            android:drawableLeft="@drawable/ic_action_reboot"
+            android:text="@string/action_reboot" >
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_thin"
+            android:background="@color/ItemDividerLine" />
+
+        <TextView
+            android:id="@+id/textView_menu_PowerOff"
+            style="@style/menu_item_compound"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/entire_minimum_size"
+            android:drawableLeft="@drawable/ic_action_poweroff"
+            android:text="@string/action_shutdown" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_Menu_More"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout_ActionBar"
+        android:background="@color/ElementsBackground"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView_menu_ServiceToggle"
+            style="@style/menu_item_compound"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/entire_minimum_size"
+            android:drawableLeft="@drawable/ic_action_time"
+            android:text="@string/app_service_turnon" >
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_thin"
+            android:background="@color/ItemDividerLine" />
+        <!--
+완료 상태서 로그인 메뉴 안쓸래.
+        <TextView
+            android:id="@+id/textView_menu_LogIn"
+            style="@style/menu_item_compound"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/entire_minimum_size"
+            android:drawableLeft="@drawable/ic_action_login"
+            android:text="@string/action_login" >
+        </TextView>
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_thin"
+            android:background="@color/ItemDividerLine" />
+        -->
+
+        <TextView
+            android:id="@+id/textView_menu_KTCare"
+            style="@style/menu_item_compound"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/entire_minimum_size"
+            android:drawableLeft="@drawable/ic_action_olleh"
+            android:text="@string/action_launch_ktcare_app" >
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_thin"
+            android:background="@color/ItemDividerLine" />
+        
+        <TextView
+            android:id="@+id/textView_menu_WebCM"
+            style="@style/menu_item_compound"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/entire_minimum_size"
+            android:drawableLeft="@drawable/ic_action_web"
+            android:text="@string/action_launch_web_cm" >
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_thin"
+            android:background="@color/ItemDividerLine" />
+
+        <TextView
+            android:id="@+id/textView_menu_WiFi"
+            style="@style/menu_item_compound"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/entire_minimum_size"
+            android:drawableLeft="@drawable/ic_action_wifi"
+            android:text="@string/action_wifi" >
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_thin"
+            android:background="@color/ItemDividerLine" />
+
+        <TextView
+            android:id="@+id/textView_menu_Settings"
+            style="@style/menu_item_compound"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/entire_minimum_size"
+            android:drawableLeft="@drawable/ic_action_settings"
+            android:text="@string/action_settings" >
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>

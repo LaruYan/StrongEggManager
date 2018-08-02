@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:theme="@style/Dialog" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView_SelectApp_KtFull"
+            style="@style/dialog_item_compound"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/entire_minimum_size"
+            android:drawableLeft="@drawable/ic_action_olleh"
+            android:text="@string/action_app_ktcare" />
+<!-- 
+        <TextView
+            android:id="@+id/textView_SelectApp_KtMini"
+            style="@style/dialog_item_compound"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/entire_minimum_size"
+            android:drawableLeft="@drawable/ic_action_olleh"
+            android:text="@string/action_app_ktcaremini"
+            android:visibility="gone"   />"
+-->
+        <TextView
+            android:id="@+id/textView_SelectApp_KtWeb"
+            style="@style/dialog_item_compound"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/entire_minimum_size"
+            android:drawableLeft="@drawable/ic_action_web"
+            android:text="@string/action_app_browser" />
+    </LinearLayout>
+
+</ScrollView>

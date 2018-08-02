@@ -1,0 +1,131 @@
+-- Merging decision tree log ---
+manifest
+ADDED from AndroidManifest.xml:1:1
+	package
+		ADDED from AndroidManifest.xml:1:11
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:versionName
+		ADDED from AndroidManifest.xml:3:5
+	android:versionCode
+		ADDED from AndroidManifest.xml:2:5
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	xmlns:android
+		ADDED from AndroidManifest.xml:3:32
+uses-sdk
+ADDED from AndroidManifest.xml:5:5
+MERGED from StrongEggManager:lib_pulltorefresh:unspecified:7:5
+MERGED from com.android.support:support-v4:21.0.2:15:5
+	android:targetSdkVersion
+		ADDED from AndroidManifest.xml:7:9
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:minSdkVersion
+		ADDED from AndroidManifest.xml:6:9
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+uses-feature#android.hardware.wifi
+ADDED from AndroidManifest.xml:9:5
+	android:required
+		ADDED from AndroidManifest.xml:11:9
+	android:name
+		ADDED from AndroidManifest.xml:10:9
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from AndroidManifest.xml:13:5
+	android:name
+		ADDED from AndroidManifest.xml:13:22
+uses-permission#android.permission.INTERNET
+ADDED from AndroidManifest.xml:14:5
+	android:name
+		ADDED from AndroidManifest.xml:14:22
+uses-feature#android.hardware.touchscreen
+ADDED from AndroidManifest.xml:15:5
+	android:required
+		ADDED from AndroidManifest.xml:15:63
+	android:name
+		ADDED from AndroidManifest.xml:15:19
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from AndroidManifest.xml:16:5
+	android:name
+		ADDED from AndroidManifest.xml:16:22
+application
+ADDED from AndroidManifest.xml:18:5
+MERGED from StrongEggManager:lib_pulltorefresh:unspecified:11:5
+MERGED from com.android.support:support-v4:21.0.2:16:5
+	android:label
+		ADDED from AndroidManifest.xml:23:9
+	android:allowBackup
+		ADDED from AndroidManifest.xml:19:9
+	android:icon
+		ADDED from AndroidManifest.xml:22:9
+	android:description
+		ADDED from AndroidManifest.xml:21:9
+	android:theme
+		ADDED from AndroidManifest.xml:24:9
+	android:name
+		ADDED from AndroidManifest.xml:20:9
+activity#kr.LaruYan.StrongEggManager.MainActivity
+ADDED from AndroidManifest.xml:25:9
+	android:label
+		ADDED from AndroidManifest.xml:28:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:29:13
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:31:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:27:13
+	android:theme
+		ADDED from AndroidManifest.xml:30:13
+	android:name
+		ADDED from AndroidManifest.xml:26:13
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:31:54
+action#android.intent.action.MAIN
+ADDED from AndroidManifest.xml:32:17
+	android:name
+		ADDED from AndroidManifest.xml:32:25
+category#android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:33:17
+	android:name
+		ADDED from AndroidManifest.xml:33:27
+service#kr.LaruYan.StrongEggManager.StrongEggManagerService
+ADDED from AndroidManifest.xml:37:9
+	android:label
+		ADDED from AndroidManifest.xml:40:13
+	android:exported
+		ADDED from AndroidManifest.xml:39:13
+	android:name
+		ADDED from AndroidManifest.xml:38:13
+receiver#kr.LaruYan.StrongEggManager.WifiStateReceiver
+ADDED from AndroidManifest.xml:43:9
+	android:exported
+		ADDED from AndroidManifest.xml:45:13
+	android:name
+		ADDED from AndroidManifest.xml:44:13
+intent-filter#android.net.wifi.WIFI_STATE_CHANGED+android.net.wifi.supplicant.STATE_CHANGE
+ADDED from AndroidManifest.xml:46:13
+action#android.net.wifi.WIFI_STATE_CHANGED
+ADDED from AndroidManifest.xml:47:17
+	android:name
+		ADDED from AndroidManifest.xml:47:25
+action#android.net.wifi.supplicant.STATE_CHANGE
+ADDED from AndroidManifest.xml:49:17
+	android:name
+		ADDED from AndroidManifest.xml:49:25
+receiver#kr.LaruYan.StrongEggManager.ScreenStateReceiver
+ADDED from AndroidManifest.xml:53:9
+	android:exported
+		ADDED from AndroidManifest.xml:55:13
+	android:name
+		ADDED from AndroidManifest.xml:54:13
+intent-filter#android.intent.action.SCREEN_OFF+android.intent.action.SCREEN_ON
+ADDED from AndroidManifest.xml:56:13
+action#android.intent.action.SCREEN_ON
+ADDED from AndroidManifest.xml:57:17
+	android:name
+		ADDED from AndroidManifest.xml:57:25
+action#android.intent.action.SCREEN_OFF
+ADDED from AndroidManifest.xml:58:17
+	android:name
+		ADDED from AndroidManifest.xml:58:25

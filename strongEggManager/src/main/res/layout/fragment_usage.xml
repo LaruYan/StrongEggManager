@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.handmark.pulltorefresh.library.PullToRefreshScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView_Usage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="none"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        style="@style/PageRoot"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView_Usage_label"
+            style="@style/section_divider_text_only"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/section_tag_height"
+            android:text="@string/section_header_usage" />
+
+        <View
+            android:id="@+id/viewLine_Usage_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_medium"
+            android:background="@color/SectionDividerLine" />
+
+        <TextView
+            android:id="@+id/textView_Usage_Plan"
+            style="@style/item_simple_compound"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/entire_minimum_size"
+            android:drawableLeft="@drawable/ic_plan"
+            android:text="@string/init_pleasewait" >
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_thin"
+            android:background="@color/ItemDividerLine" />
+
+        <TextView
+            android:id="@+id/textView_Usage_packetsSimple"
+            style="@style/item_simple_compound"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/entire_minimum_size"
+            android:drawableLeft="@drawable/ic_egg_usage"
+            android:text="@string/init_pleasewait" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView_Usage_packetsDetailed"
+            style="@style/item_detailed_text_integrated"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/entire_minimum_size"
+            android:text="@string/init_pleasewait"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_thin"
+            android:background="@color/ItemDividerLine" />
+
+        <TextView
+            android:id="@+id/textView_Usage_billsSimple"
+            style="@style/item_simple_compound"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/entire_minimum_size"
+            android:drawableLeft="@drawable/ic_time"
+            android:text="@string/init_pleasewait" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView_Usage_billsDetailed"
+            style="@style/item_detailed_text_integrated"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/entire_minimum_size"
+            android:text="@string/init_pleasewait"
+			android:visibility="gone"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_thin"
+            android:background="@color/ItemDividerLine" />
+
+        <TextView
+            android:id="@+id/textView_Usage_CheckWeb"
+            style="@style/item_simple_compound"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/entire_minimum_size"
+            android:drawableLeft="@drawable/ic_olleh"
+            android:text="@string/action_check_fromWeb" />
+        
+        <View
+            android:id="@+id/viewRect_PullDownToRefreshDummy"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_dummy_pull2refresh"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</com.handmark.pulltorefresh.library.PullToRefreshScrollView>

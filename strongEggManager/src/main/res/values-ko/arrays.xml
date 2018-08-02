@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="updateInterval">
+        <item name="499">사용자 지정…</item>
+        <item name="500">0.5초 마다</item>
+        <item name="1000">1초 마다</item>
+        <item name="2000">2초 마다</item>
+        <item name="5000">5초 마다 (기본값)</item>
+        <item name="10000">10초 마다</item>
+        <item name="15000">15초 마다</item>
+    </string-array>
+
+</resources>

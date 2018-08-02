@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout_mainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        style="@style/actionBar_compound"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/entire_minimum_size"
+        android:background="@color/ActionBarBackground" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_inside_elements"
+        android:background="@drawable/simple_shadow_down" />
+
+</LinearLayout>

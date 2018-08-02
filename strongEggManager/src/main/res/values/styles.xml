@@ -1,0 +1,162 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- http://www.londatiga.net/it/how-to-create-custom-window-title-in-android/ 개조된 제목 막대 만들기 -->
+    <style name="SplashTheme" parent="android:Theme.Light">
+        <item name="android:windowTitleSize">@dimen/entire_minimum_size</item>
+        <item name="android:windowTitleStyle">@style/CustomWindowTitle</item>
+        <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
+    </style>
+
+    <style name="CustomWindowTitleBackground">
+        <item name="android:background">@color/ActionBarBackground</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="CustomWindowTitle">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawableLeft">@drawable/ic_launcher_padded</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/opaqueWhite</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="BlankWindowTitleBackground">
+        <item name="android:background">@null</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="BlankWindowTitle">
+        <item name="android:gravity">@null</item>
+        <item name="android:drawableLeft">@null</item>
+        <item name="android:textAppearance">@null</item>
+        <item name="android:textStyle">@null</item>
+        <item name="android:textColor">@null</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="AppTheme" parent="android:Theme.Light.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@style/BlankWindowTitle</item>
+        <item name="android:windowTitleBackgroundStyle">@style/BlankWindowTitleBackground</item>
+    </style>
+
+    <color name="StripColor">#FF33e5a1</color>
+    <color name="StripColorFocused">#3333e5a1</color>
+    <color name="opaqueWhite">#FFFFFFFF</color>
+    <color name="transparentWhite">#00FFFFFF</color>
+    <color name="StripColorPressed">#5533e5a1</color>
+    <color name="ActionBarBackground">#222222</color>
+    <color name="ElementsBackground">#222222</color>
+    <color name="StatusBarBackground">#222222</color>
+    <color name="SectionDividerLine">#FF000000</color>
+    <color name="ItemDividerLine">#80808080</color>
+    <color name="ItemDetailed_Background_Edge">#77000000</color>
+    <color name="ItemDetailed_Background_Center">#09000000</color>
+
+    <style name="Dialog" parent="@android:style/Theme.Dialog"></style>
+
+    <style name="actionBar_text">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:text">@string/app_name</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/opaqueWhite</item>
+        <item name="android:textStyle">bold</item>
+        <!--
+        <item name="android:clickable">false</item>
+        <item name="android:linksClickable">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:longClickable">false</item>
+        -->
+    </style>
+
+    <style name="actionBar_compound" parent="@style/actionBar_text">
+        <item name="android:drawableLeft">@drawable/ic_launcher_padded</item>
+    </style>
+    
+    <style name="section_divider_text_only">
+        <item name="android:gravity">bottom</item>
+        <item name="android:paddingBottom">@dimen/padding_inside_elements</item>
+        <item name="android:paddingLeft">@dimen/padding_medium</item>
+        <item name="android:paddingRight">@dimen/padding_medium</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="item_simple_compound">
+        <item name="android:background">@drawable/list_item</item>
+        <item name="android:padding">@dimen/padding_medium</item>
+        <item name="android:drawablePadding">@dimen/padding_medium</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="item_simple_root">
+        <item name="android:background">@drawable/list_item</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="preference_compound" parent="item_simple_compound">
+    </style>
+    <style name="preference_heaText" parent="item_simple_compound">
+    </style>
+    <style name="preference_subText" parent="preference_heaText">
+    </style>
+    
+    <style name="item_simple_text_only">
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/padding_medium</item>
+        <item name="android:paddingRight">@dimen/padding_medium</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:clickable">false</item>
+        <item name="android:focusable">false</item>
+    </style>
+
+    <style name="item_detailed_text_integrated">
+        <item name="android:background">@drawable/list_item_sub</item>
+        <item name="android:clickable">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/padding_medium</item>
+        <item name="android:paddingRight">@dimen/padding_medium</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <style name="PageRoot">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingLeft">@dimen/padding_windowside_leftright</item>
+        <item name="android:paddingRight">@dimen/padding_windowside_leftright</item>
+    </style>
+
+    <style name="menu_item_compound" parent="item_simple_compound">
+        <item name="android:textColor">@color/opaqueWhite</item>
+    </style>
+
+    <style name="dialog_item_compound" parent="menu_item_compound">
+        <item name="android:textColor">@color/opaqueWhite</item>
+        <item name="android:shadowColor">@color/SectionDividerLine</item>
+        <item name="android:shadowRadius">3.0</item>
+    </style>
+
+    <style name="dialog_elements_without_shadow">
+        <item name="android:paddingBottom">@dimen/padding_inside_elements</item>
+        <item name="android:paddingTop">@dimen/padding_inside_elements</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="dialog_elements" parent="dialog_elements_without_shadow">
+        <item name="android:textColor">@color/opaqueWhite</item>
+        <item name="android:shadowColor">@color/SectionDividerLine</item>
+        <item name="android:shadowRadius">3.0</item>
+    </style>
+
+</resources>

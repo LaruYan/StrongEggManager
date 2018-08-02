@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="android:Theme.Light.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@style/BlankWindowTitle</item>
+        <item name="android:windowTitleBackgroundStyle">@style/BlankWindowTitleBackground</item>
+        <!-- <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_secondary</item>
+        <item name="colorAccent">@color/color_accent</item>-->
+        <item name="android:statusBarColor">@color/StatusBarBackground</item>
+    </style>
+</resources>

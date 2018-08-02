@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--  android:fadeDuration="100"
+    android:fadeEnabled="true"> exitFadeDuration 은 허니컴부터.. ㅠㅠ -->
+    <item><shape>
+           <!--  <solid android:color="@color/transparentWhite" />-->
+            
+            <gradient
+                android:endColor="@color/ItemDetailed_Background_Center"
+                android:centerColor="@color/ItemDetailed_Background_Center"
+                android:startColor="@color/ItemDetailed_Background_Edge"
+                android:centerY="15.0%"
+                android:angle="270" />
+            <!--
+            <stroke
+                android:width="3dp"
+                android:color="@color/grey05" />
+            <corners
+                android:radius="3dp" />
+            <padding
+                android:left="10dp"
+                android:top="10dp"
+                android:right="10dp"
+                android:bottom="10dp" />
+
+
+            -->
+        </shape></item>
+
+</selector>
