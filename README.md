@@ -1,3 +1,10 @@
+#  Wait! 잠깐!
+Wibro has ended its service by KT since November 1st, 2018.  
+This app will not work as there's no Wibro coverage for these devices.  
+
+KT가 운영하는 와이브로는 2018년 11월 1일 서비스 종료되었습니다.
+이 앱이 목표로하는 기기의 와이브로 제공지역이 없어 이 앱도 작동하지 않을겁니다.
+
 # StrongEggManager
 (Old Project at 2014) 와이브로 에그인 스트롱에그1/컴팩트에그1 상태를 보고, 알림 막대에 신호 세기 등을 표시해주는 앱. An essential App for KT wibro egg (Strong Egg 1 and Compact Egg 1) users that shows status on app, also puts signal strength icon on status bar.  
 https://play.google.com/store/apps/details?id=kr.LaruYan.StrongEggManager
@@ -88,6 +95,16 @@ If you changed nothing from factory state. put (without quotes) 'user' and '0000
 > 
 > 2014/06/07 1.28  
 > You can now set how frequent auto refresh will happen. between 0.5 and 15 seconds.
+> 
+> 2014/05/11 1.27  
+> Support KT's resolved usage retrieve method. Contact me if you get wrong numbers on CompactEgg1.  
+> 
+> 2014/04/26 1.26  
+> We do support StrongEgg1's updated 1.7.6.0 firmware.  
+> 
+> 2014/02/18 1.24  
+> fix force close on some devices.
+
 
 ## 한국어 스트롱에그1 & 컴팩트에그1 상태 보기
 와이브로 신호세기를 알림막대에 보여드립니다. 신호세기 하나 보시려고 복잡한 웹CM을 들어가실 필요가 없습니다!  
