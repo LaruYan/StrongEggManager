@@ -2,28 +2,28 @@
 Wibro has ended its service by KT since November 1st, 2018.  
 This app will not work as there's no Wibro coverage for these devices.  
 
-KT가 운영하는 와이브로는 2018년 11월 1일 서비스 종료되었습니다.
+KT가 운영하는 와이브로는 2018년 12월 31일 서비스 종료되었습니다.
 이 앱이 목표로하는 기기의 와이브로 제공지역이 없어 이 앱도 작동하지 않을겁니다.
 
 # StrongEggManager
 (Old Project at 2014) 와이브로 에그인 스트롱에그1/컴팩트에그1 상태를 보고, 알림 막대에 신호 세기 등을 표시해주는 앱. An essential App for KT wibro egg (Strong Egg 1 and Compact Egg 1) users that shows status on app, also puts signal strength icon on status bar.  
 https://play.google.com/store/apps/details?id=kr.LaruYan.StrongEggManager
 
-![alt text](https://raw.githubusercontent.com/LaruYan/StrongEggManager/readme/doc/ic_launcher.png "Icon")
-![alt text](https://raw.githubusercontent.com/LaruYan/StrongEggManager/readme/doc/ko/promo_1.png "promotion image")
+![launcher icon](https://raw.githubusercontent.com/LaruYan/StrongEggManager/master/doc/ic_launcher.png "Icon")
+![promotion image](https://raw.githubusercontent.com/LaruYan/StrongEggManager/master/doc/ko/promo_1.png "promotion image")
 
 ## English StrongEgg1&CompactEgg1 Status
 Put signal bar on noti bar, no need to go complicated Router's page to check it. 
-![alt text](https://raw.githubusercontent.com/LaruYan/StrongEggManager/readme/doc/en/FeatureImage.png "Feature image")
+![feature image](https://raw.githubusercontent.com/LaruYan/StrongEggManager/master/doc/en/FeatureImage.png "Feature image")
 
-![alt text](https://raw.githubusercontent.com/LaruYan/StrongEggManager/readme/doc/en/01_power_menu.png "Summary screen + Power menu")
-![alt text](https://raw.githubusercontent.com/LaruYan/StrongEggManager/readme/doc/en/02_summary_expanded.png "Summary, expanded")
-![alt text](https://raw.githubusercontent.com/LaruYan/StrongEggManager/readme/doc/en/03_icon_on_statusbar.png "Icon on statusbar")
-![alt text](https://raw.githubusercontent.com/LaruYan/StrongEggManager/readme/doc/en/04_noti_on_statusbar.png "Settings for notification")
-![alt text](https://raw.githubusercontent.com/LaruYan/StrongEggManager/readme/doc/en/05_usage.png "Usage screen")
-![alt text](https://raw.githubusercontent.com/LaruYan/StrongEggManager/readme/doc/en/06_more_menu.png "more menu")
-![alt text](https://raw.githubusercontent.com/LaruYan/StrongEggManager/readme/doc/en/07_webcm.png "Choose customer center app")
-![alt text](https://raw.githubusercontent.com/LaruYan/StrongEggManager/readme/doc/en/08_only_signal.png "Only signal strength being shown")  
+![summary and power](https://raw.githubusercontent.com/LaruYan/StrongEggManager/master/doc/en/01_power_menu.png "Summary screen + Power menu")
+![summary expanded](https://raw.githubusercontent.com/LaruYan/StrongEggManager/master/doc/en/02_summary_expanded.png "Summary, expanded")
+![icon on statusbar](https://raw.githubusercontent.com/LaruYan/StrongEggManager/master/doc/en/03_icon_on_statusbar.png "Icon on statusbar")
+![settings for notification](https://raw.githubusercontent.com/LaruYan/StrongEggManager/master/doc/en/04_noti_on_statusbar.png "Settings for notification")
+![usage screen](https://raw.githubusercontent.com/LaruYan/StrongEggManager/master/doc/en/05_usage.png "Usage screen")
+![more menu](https://raw.githubusercontent.com/LaruYan/StrongEggManager/master/doc/en/06_more_menu.png "more menu")
+![choose cs app](https://raw.githubusercontent.com/LaruYan/StrongEggManager/master/doc/en/07_webcm.png "Choose customer center app")
+![only show signal strength](https://raw.githubusercontent.com/LaruYan/StrongEggManager/master/doc/en/08_only_signal.png "Only signal strength being shown")  
 
 ────────────────────────  
 "StrongEgg 1 & CompactEgg 1 Status", shortly 'SC Egg1 Status' provides  
@@ -108,16 +108,16 @@ If you changed nothing from factory state. put (without quotes) 'user' and '0000
 
 ## 한국어 스트롱에그1 & 컴팩트에그1 상태 보기
 와이브로 신호세기를 알림막대에 보여드립니다. 신호세기 하나 보시려고 복잡한 웹CM을 들어가실 필요가 없습니다!  
-![alt text](https://raw.githubusercontent.com/LaruYan/StrongEggManager/readme/doc/ko/FeatureImage.png "소개 이미지")
+![소개 이미지](https://raw.githubusercontent.com/LaruYan/StrongEggManager/master/doc/ko/FeatureImage.png "소개 이미지")
 
-![alt text](https://raw.githubusercontent.com/LaruYan/StrongEggManager/readme/doc/ko/01_power_menu.png "요약 화면 + 전원 메뉴")
-![alt text](https://raw.githubusercontent.com/LaruYan/StrongEggManager/readme/doc/ko/02_summary_expanded.png "요약 펼침")
-![alt text](https://raw.githubusercontent.com/LaruYan/StrongEggManager/readme/doc/en/03_icon_on_statusbar.png "알림막대에 놓여진 아이콘")
-![alt text](https://raw.githubusercontent.com/LaruYan/StrongEggManager/readme/doc/ko/04_noti_on_statusbar.png "알림막대 아이콘 설정")
-![alt text](https://raw.githubusercontent.com/LaruYan/StrongEggManager/readme/doc/ko/05_usage.png "사용량 화면")
-![alt text](https://raw.githubusercontent.com/LaruYan/StrongEggManager/readme/doc/ko/06_more_menu.png "더 보기 메뉴")
-![alt text](https://raw.githubusercontent.com/LaruYan/StrongEggManager/readme/doc/ko/07_webcm.png "고객센터 앱 선택")
-![alt text](https://raw.githubusercontent.com/LaruYan/StrongEggManager/readme/doc/ko/08_only_signal.png "알림막대에 신호세기만 표시")  
+![요약과 전원](https://raw.githubusercontent.com/LaruYan/StrongEggManager/master/doc/ko/01_power_menu.png "요약 화면 + 전원 메뉴")
+![요약 펼침](https://raw.githubusercontent.com/LaruYan/StrongEggManager/master/doc/ko/02_summary_expanded.png "요약 펼침")
+![알림막대 아이콘](https://raw.githubusercontent.com/LaruYan/StrongEggManager/master/doc/en/03_icon_on_statusbar.png "알림막대에 놓여진 아이콘")
+![알림 설정](https://raw.githubusercontent.com/LaruYan/StrongEggManager/master/doc/ko/04_noti_on_statusbar.png "알림막대 아이콘 설정")
+![사용량 화면](https://raw.githubusercontent.com/LaruYan/StrongEggManager/master/doc/ko/05_usage.png "사용량 화면")
+![더 보기 메뉴](https://raw.githubusercontent.com/LaruYan/StrongEggManager/master/doc/ko/06_more_menu.png "더 보기 메뉴")
+![고객센터 앱 선택](https://raw.githubusercontent.com/LaruYan/StrongEggManager/master/doc/ko/07_webcm.png "고객센터 앱 선택")
+![신호세기만 ](https://raw.githubusercontent.com/LaruYan/StrongEggManager/master/doc/ko/08_only_signal.png "알림막대에 신호세기만 표시")  
 
 ────────────────────────  
 스트롱에그1 & 컴팩트에그1 상태 보기, 줄여서 '스컴에그1 상태보기'에서  
